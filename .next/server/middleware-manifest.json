@@ -10,66 +10,18 @@
       "page": "/",
       "matchers": [
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\.json))?[\\/#\\?]?$",
-          "originalSource": "/"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/login(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/login"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/presentation(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/presentation/:path*"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/desempeno(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/desempeno"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/inspeccion(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/inspeccion"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/observacion(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/observacion"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/capacitacion(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/capacitacion"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/epp(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/epp"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/incidentes(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/incidentes"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/rendimiento(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/rendimiento"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/observaciones(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/observaciones"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/perfil(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/perfil"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/usuarios(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json)?[\\/#\\?]?$",
-          "originalSource": "/usuarios/:path*"
+          "regexp": "^/.*$",
+          "originalSource": "/:path*"
         }
       ],
       "wasm": [],
       "assets": [],
       "env": {
-        "__NEXT_BUILD_ID": "1D-2t_h2vpOVj0RMR4p0p",
+        "__NEXT_BUILD_ID": "development",
         "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eLGXSOYsAaHtm9ZAzQaAWf407EZK/1OsPxpbI5BQUGg=",
-        "__NEXT_PREVIEW_MODE_ID": "3ce38711f8dc3c410a5d029ad93c4783",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "3bcdd066fb54d72ce6cfde0b57e3111379c8af38bd6e9fd1e950344b506f0b54",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "3eefd40274f25cfea9ba440a2bf840ed52debb5487858c7cb9ec934393cd2b54"
+        "__NEXT_PREVIEW_MODE_ID": "e80f8366cf9552fad2d82d1d73a2c6ec",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "8b470a9afa088340d2dc9c858ebd992a5ec42c0685f7410e6df174367d2b6e6c",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "95e5a4866b64970f494958299a00a7c1b9cf3ac1e656e8916b64e4a29889098f"
       }
     }
   },

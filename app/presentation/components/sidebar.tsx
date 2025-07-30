@@ -29,7 +29,7 @@ import TypewriterText from '@/app/presentation/components/TypewriterText';
 export default function Sidebar() {
   const router = useRouter();
   const pathname = usePathname();
-  const { isAuthenticated, isMobileSidebarOpen, logout, closeMobileSidebar } = useAuth();
+  const { isAuthenticated, isMobileSidebarOpen, isDesktopSidebarOpen, logout, closeMobileSidebar, closeSidebar } = useAuth();
   const [showGestion, setShowGestion] = useState(true);
   const [showAjustes, setShowAjustes] = useState(false);
 
@@ -89,7 +89,7 @@ export default function Sidebar() {
   return (
     <aside className={`h-screen w-72 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white fixed left-0 top-0 shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-[999] md:z-auto
       ${isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
-      md:translate-x-0`}>
+      md:${isDesktopSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
       {/* Header */}
       <div className="px-6 py-8 border-b border-slate-700/50 flex-shrink-0">
         <div className="flex items-center justify-between">
@@ -101,7 +101,7 @@ export default function Sidebar() {
           </div>
           {/* Botón X para cerrar - visible en móvil y desktop */}
           <button
-            onClick={closeMobileSidebar}
+            onClick={closeSidebar}
             className="p-2 rounded-lg hover:bg-slate-700/50 transition-colors duration-200 group"
             aria-label="Cerrar sidebar"
           >

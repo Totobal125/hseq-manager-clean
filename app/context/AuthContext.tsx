@@ -5,10 +5,13 @@ type AuthContextType = {
   isAuthenticated: boolean;
   isLoading: boolean;
   isMobileSidebarOpen: boolean;
+  isDesktopSidebarOpen: boolean;
   login: () => void;
   logout: () => void;
   toggleMobileSidebar: () => void;
   closeMobileSidebar: () => void;
+  toggleDesktopSidebar: () => void;
+  closeSidebar: () => void;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -17,6 +20,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
+  const [isDesktopSidebarOpen, setIsDesktopSidebarOpen] = useState(true);
 
   useEffect(() => {
     const checkAuth = () => {
@@ -42,6 +46,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     document.cookie = "auth_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     setIsAuthenticated(false);
     setIsMobileSidebarOpen(false);
+    setIsDesktopSidebarOpen(true);
   };
 
   const toggleMobileSidebar = () => {
@@ -52,15 +57,27 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     setIsMobileSidebarOpen(false);
   };
 
+  const toggleDesktopSidebar = () => {
+    setIsDesktopSidebarOpen(!isDesktopSidebarOpen);
+  };
+
+  const closeSidebar = () => {
+    setIsMobileSidebarOpen(false);
+    setIsDesktopSidebarOpen(!isDesktopSidebarOpen);
+  };
+
   return (
     <AuthContext.Provider value={{ 
       isAuthenticated, 
       isLoading, 
       isMobileSidebarOpen,
+      isDesktopSidebarOpen,
       login, 
       logout,
       toggleMobileSidebar,
-      closeMobileSidebar
+      closeMobileSidebar,
+      toggleDesktopSidebar,
+      closeSidebar
     }}>
       {children}
     </AuthContext.Provider>
