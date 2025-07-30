@@ -1,0 +1,59 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FEE2E2;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="400" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- Patrón de fondo -->
+  <polygon points="30,40 35,30 40,40 30,35 40,35" fill="white" opacity="0.1"/>
+  <polygon points="360,60 365,50 370,60 360,55 370,55" fill="white" opacity="0.1"/>
+  <polygon points="70,150 75,140 80,150 70,145 80,145" fill="white" opacity="0.1"/>
+  <polygon points="330,120 335,110 340,120 330,115 340,115" fill="white" opacity="0.1"/>
+  
+  <!-- Icono principal de alerta -->
+  <g transform="translate(200, 100)">
+    <!-- Triángulo de alerta -->
+    <polygon points="0,-30 25,20 -25,20" fill="url(#iconGradient)"/>
+    <polygon points="0,-25 20,15 -20,15" fill="#EF4444"/>
+    
+    <!-- Signo de exclamación -->
+    <rect x="-2" y="-5" width="4" height="12" fill="white" rx="2"/>
+    <circle cx="0" cy="15" r="3" fill="white"/>
+  </g>
+  
+  <!-- Iconos secundarios de incidentes -->
+  <g transform="translate(100, 80)">
+    <circle cx="0" cy="0" r="12" fill="white" opacity="0.2"/>
+    <path d="M-6,-6 L6,6 M-6,6 L6,-6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(300, 120)">
+    <circle cx="0" cy="0" r="12" fill="white" opacity="0.2"/>
+    <path d="M-6,-6 L6,6 M-6,6 L6,-6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Iconos de emergencia -->
+  <g transform="translate(60, 140)">
+    <rect x="-8" y="-8" width="16" height="16" fill="white" opacity="0.15" rx="2"/>
+    <path d="M-4,-4 L4,4 M-4,4 L4,-4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(340, 60)">
+    <rect x="-8" y="-8" width="16" height="16" fill="white" opacity="0.15" rx="2"/>
+    <path d="M-4,-4 L4,4 M-4,4 L4,-4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Texto -->
+  <text x="200" y="180" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    INCIDENTES
+  </text>
+</svg> 

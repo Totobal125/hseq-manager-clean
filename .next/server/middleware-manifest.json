@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/(\\/?index|\\/?index\\.json))?[\\/#\\?]?$",
+          "originalSource": "/"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/login(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/login"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/presentation(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/presentation/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/desempeno(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/desempeno"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/inspeccion(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/inspeccion"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/observacion(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/observacion"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/capacitacion(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/capacitacion"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/epp(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/epp"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/incidentes(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/incidentes"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/rendimiento(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/rendimiento"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/observaciones(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/observaciones"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/perfil(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/perfil"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/usuarios(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json)?[\\/#\\?]?$",
+          "originalSource": "/usuarios/:path*"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "sAJCkynFcqfH2W6sVMyqt",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eLGXSOYsAaHtm9ZAzQaAWf407EZK/1OsPxpbI5BQUGg=",
+        "__NEXT_PREVIEW_MODE_ID": "3ce38711f8dc3c410a5d029ad93c4783",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "3bcdd066fb54d72ce6cfde0b57e3111379c8af38bd6e9fd1e950344b506f0b54",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "3eefd40274f25cfea9ba440a2bf840ed52debb5487858c7cb9ec934393cd2b54"
+      }
+    }
+  },
+  "functions": {},
+  "sortedMiddleware": [
+    "/"
+  ]
+}

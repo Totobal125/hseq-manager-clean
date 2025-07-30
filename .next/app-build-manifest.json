@@ -1,0 +1,181 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/_not-found/page-a01990ac194d3f3d.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/css/cedc8b501a2454c5.css",
+      "static/chunks/ee560e2c-14b3da048725b4a1.js",
+      "static/chunks/874-3e820bd666038662.js",
+      "static/chunks/app/layout-73089e2829cf082f.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/337-7f7f58f27faad94e.js",
+      "static/chunks/423-acf26dc78b13460a.js",
+      "static/chunks/app/page-3ed8b8114b7ce794.js"
+    ],
+    "/presentation/areas/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/areas/page-ca48b08581747f14.js"
+    ],
+    "/presentation/centros-trabajo/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/centros-trabajo/page-00d9df090cdcb290.js"
+    ],
+    "/presentation/actividades/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/actividades/page-867d51430605c914.js"
+    ],
+    "/presentation/capacitacion/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/capacitacion/page-17f15b4b6157e6cf.js"
+    ],
+    "/presentation/desempeno/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/337-7f7f58f27faad94e.js",
+      "static/chunks/202-c53a1d4392b47396.js",
+      "static/chunks/app/presentation/desempeno/page-f518cffd07ed7711.js"
+    ],
+    "/presentation/checklist/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/checklist/page-d255414332092cec.js"
+    ],
+    "/presentation/empresas/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/empresas/page-bee4895da9350177.js"
+    ],
+    "/presentation/documentacion/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/documentacion/page-78caee904cb53807.js"
+    ],
+    "/presentation/entrega-epp/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/ee560e2c-14b3da048725b4a1.js",
+      "static/chunks/app/presentation/entrega-epp/page-525ab9cc73236486.js"
+    ],
+    "/presentation/encargados/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/encargados/page-30eaffeca60e1e3c.js"
+    ],
+    "/presentation/epp/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/epp/page-bc072d9a1f31132d.js"
+    ],
+    "/presentation/cargos/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/cargos/page-700facf7ffef2303.js"
+    ],
+    "/presentation/incidente/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/incidente/page-f591331d39a150ca.js"
+    ],
+    "/presentation/perfil/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/874-3e820bd666038662.js",
+      "static/chunks/app/presentation/perfil/page-3c1bbcf9c1a646a6.js"
+    ],
+    "/presentation/observacion/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/observacion/page-28b17a34616772d4.js"
+    ],
+    "/presentation/login/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/login/page-10a2f91e607f70ba.js"
+    ],
+    "/presentation/tipos-empresas/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/tipos-empresas/page-358b078997b1595b.js"
+    ],
+    "/presentation/usuarios/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/usuarios/page-00ce6384807fbec4.js"
+    ],
+    "/presentation/informes/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/informes/page-6124de333be003ed.js"
+    ],
+    "/presentation/inspeccion/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/inspeccion/page-ddd60500c6141421.js"
+    ],
+    "/presentation/trabajadores/page": [
+      "static/chunks/webpack-e39b2beed1ca1d9e.js",
+      "static/chunks/4bd1b696-9911af18dede28aa.js",
+      "static/chunks/964-c4a6273b52d6cca1.js",
+      "static/chunks/main-app-02746ab1f1d4bee1.js",
+      "static/chunks/app/presentation/trabajadores/page-0be2a0b60bceca98.js"
+    ]
+  }
+}
