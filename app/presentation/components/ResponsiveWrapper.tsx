@@ -17,7 +17,7 @@ export default function ResponsiveWrapper({ children, sidebarComponent }: Respon
       {isAuthenticated && (
         <button
           onClick={toggleMobileSidebar}
-          className="fixed top-4 left-4 z-[1001] md:hidden bg-slate-900 text-white p-3 rounded-lg shadow-lg hover:bg-slate-800 transition-all duration-200"
+          className="fixed top-4 left-4 z-[1000] md:hidden bg-slate-900 text-white p-3 rounded-lg shadow-lg hover:bg-slate-800 transition-all duration-200"
           aria-label={isMobileSidebarOpen ? "Cerrar menú" : "Abrir menú"}
         >
           {isMobileSidebarOpen ? (

@@ -19,7 +19,8 @@ import {
   FiPlus,
   FiGrid,
   FiBriefcase,
-  FiFileText
+  FiFileText,
+  FiX
 } from 'react-icons/fi';
 import { useState } from 'react';
 import { useAuth } from '@/app/context/AuthContext';
@@ -86,18 +87,26 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className={`h-screen w-72 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white fixed left-0 top-0 shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-50 md:z-auto
+    <aside className={`h-screen w-72 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white fixed left-0 top-0 shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-[999] md:z-auto
       ${isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
       md:translate-x-0`}>
       {/* Header */}
       <div className="px-6 py-8 border-b border-slate-700/50 flex-shrink-0">
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold tracking-wide text-white">
               HSEQ Manager
             </h1>
             <p className="text-xs text-slate-400 mt-1">Gestión de Seguridad y Salud en el Trabajo</p>
           </div>
+          {/* Botón X para cerrar - visible en móvil y desktop */}
+          <button
+            onClick={closeMobileSidebar}
+            className="p-2 rounded-lg hover:bg-slate-700/50 transition-colors duration-200 group"
+            aria-label="Cerrar sidebar"
+          >
+            <FiX className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors duration-200" />
+          </button>
         </div>
       </div>
 
