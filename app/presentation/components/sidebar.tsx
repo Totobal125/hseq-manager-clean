@@ -89,7 +89,7 @@ export default function Sidebar() {
   return (
     <aside className={`h-screen w-72 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white fixed left-0 top-0 shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-[999] md:z-auto
       ${isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
-      md:${isDesktopSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      ${isDesktopSidebarOpen ? 'md:translate-x-0' : 'md:-translate-x-full'}`}>
       {/* Header */}
       <div className="px-6 py-8 border-b border-slate-700/50 flex-shrink-0">
         <div className="flex items-center justify-between">
