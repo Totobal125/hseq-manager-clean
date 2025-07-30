@@ -6,16 +6,12 @@ interface MobileOverlayProps {
 }
 
 export default function MobileOverlay({ isOpen, onClose }: MobileOverlayProps) {
-  if (!isOpen) return null;
-
   return (
     <div 
-      className="sidebar-overlay"
+      className={`fixed inset-0 bg-black/50 z-[999] transition-all duration-300 md:hidden ${
+        isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+      }`}
       onClick={onClose}
-      style={{
-        opacity: isOpen ? 1 : 0,
-        visibility: isOpen ? 'visible' : 'hidden'
-      }}
     />
   );
 } 

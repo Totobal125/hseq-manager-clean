@@ -77,6 +77,11 @@
     padding: 1.5rem !important;
   }
 
+  /* Hide wave pattern on mobile */
+  .login-left-panel .absolute.bottom-0 {
+    display: none !important;
+  }
+
   /* Typography Mobile */
   .mobile-text-xl {
     font-size: 1.25rem !important;

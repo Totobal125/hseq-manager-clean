@@ -28,7 +28,7 @@ import TypewriterText from '@/app/presentation/components/TypewriterText';
 export default function Sidebar() {
   const router = useRouter();
   const pathname = usePathname();
-  const { isAuthenticated, logout } = useAuth();
+  const { isAuthenticated, isMobileSidebarOpen, logout, closeMobileSidebar } = useAuth();
   const [showGestion, setShowGestion] = useState(true);
   const [showAjustes, setShowAjustes] = useState(false);
 
@@ -37,6 +37,11 @@ export default function Sidebar() {
   const handleLogout = () => {
     logout();
     router.push("/login");
+  };
+
+  const handleLinkClick = () => {
+    // Cerrar el sidebar móvil cuando se hace clic en un enlace
+    closeMobileSidebar();
   };
 
   const isActive = (path: string) => pathname === path;
@@ -81,7 +86,9 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="h-screen w-72 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white fixed left-0 top-0 z-50 shadow-2xl flex flex-col">
+    <aside className={`h-screen w-72 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white fixed left-0 top-0 shadow-2xl flex flex-col transition-all duration-300 ease-in-out z-50 md:z-auto
+      ${isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
+      md:translate-x-0`}>
       {/* Header */}
       <div className="px-6 py-8 border-b border-slate-700/50 flex-shrink-0">
         <div className="flex items-center space-x-3">
@@ -100,6 +107,7 @@ export default function Sidebar() {
           {/* Dashboard */}
           <Link 
             href="/" 
+            onClick={handleLinkClick}
             className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-200 group ${
               isActive("/") 
                 ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg" 
@@ -134,6 +142,7 @@ export default function Sidebar() {
                     <Link
                       key={itemIndex}
                       href={item.href}
+                      onClick={handleLinkClick}
                       className={`flex items-center space-x-3 px-4 py-2.5 rounded-lg transition-all duration-200 group ${
                         isActive(item.href)
                           ? "bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-blue-400 border border-blue-500/30"

@@ -1,7 +1,9 @@
 import "../static/css/globals.css";
+import "../static/css/responsive.css";
 import { cookies } from "next/headers";
 import Sidebar from "./presentation/components/sidebar";
 import LayoutContent from "./presentation/components/LayoutContent";
+import ResponsiveWrapper from "./presentation/components/ResponsiveWrapper";
 import { AuthProvider } from "./context/AuthContext";
 import type { Metadata } from 'next';
 
@@ -24,10 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-gradient-to-b from-slate-50 to-slate-300">
         <AuthProvider>
-          <Sidebar />
-          <LayoutContent>
-            {children}
-          </LayoutContent>
+          <ResponsiveWrapper sidebarComponent={<Sidebar />}>
+            <LayoutContent>
+              {children}
+            </LayoutContent>
+          </ResponsiveWrapper>
         </AuthProvider>
       </body>
     </html>

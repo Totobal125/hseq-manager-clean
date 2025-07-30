@@ -22,11 +22,11 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="h-screen w-full flex justify-center items-center bg-gray-100">
-      <div className="bg-white rounded-lg shadow-xl overflow-hidden w-full max-w-4xl h-[600px]">
-        <div className="flex h-full">
+    <div className="min-h-screen w-full flex justify-center items-center bg-gray-100 p-4">
+      <div className="bg-white rounded-lg shadow-xl overflow-hidden w-full max-w-4xl min-h-[600px] md:h-[600px]">
+        <div className="flex flex-col md:flex-row h-full">
           {/* Panel izquierdo decorativo */}
-          <div className="w-1/2 bg-gradient-to-b from-[#0b1f5b] to-[#132a85] relative h-full">
+          <div className="w-full md:w-1/2 bg-gradient-to-b from-[#0b1f5b] to-[#132a85] relative h-48 md:h-full">
             {/* Elementos decorativos de fondo */}
             <div className="absolute inset-0">
               {/* Línea superior - más difuminada */}
@@ -59,9 +59,9 @@ export default function LoginPage() {
             </div>
             
             {/* Contenido del panel izquierdo */}
-            <div className="relative z-10 p-12 text-white h-full flex flex-col justify-center">
-              <h1 className="text-4xl font-bold mb-4">¡Bienvenido de nuevo!</h1>
-              <p className="text-lg mb-8 opacity-90">Inicia sesión para acceder a tu cuenta</p>
+            <div className="relative z-10 p-6 md:p-12 text-white h-full flex flex-col justify-center">
+              <h1 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4">¡Bienvenido de nuevo!</h1>
+              <p className="text-sm md:text-lg mb-4 md:mb-8 opacity-90">Inicia sesión para acceder a tu cuenta</p>
             </div>
 
             {/* Patrón ondulado en la parte inferior */}
@@ -71,18 +71,18 @@ export default function LoginPage() {
           </div>
 
           {/* Panel derecho - Formulario */}
-          <div className="w-1/2 p-12 h-full flex flex-col justify-center">
+          <div className="w-full md:w-1/2 p-6 md:p-12 flex-1 flex flex-col justify-center">
             {/* Logo y título en la misma línea */}
-            <div className="flex items-center justify-center mb-8">
+            <div className="flex items-center justify-center mb-6 md:mb-8">
               <div className="text-center">
-                <Logo width={200} height={90} />
+                <Logo width={160} height={72} className="md:w-[200px] md:h-[90px]" />
               </div>
             </div>
             
-            <h2 className="text-3xl font-bold text-gray-800 mb-2 text-center">Iniciar Sesión</h2>
-            <p className="text-gray-600 mb-8 text-center">Ingresa tus credenciales para acceder al panel</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 text-center">Iniciar Sesión</h2>
+            <p className="text-gray-600 mb-6 md:mb-8 text-center text-sm md:text-base">Ingresa tus credenciales para acceder al panel</p>
 
-            <form onSubmit={handleLogin} className="space-y-6">
+            <form onSubmit={handleLogin} className="space-y-4 md:space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Email
