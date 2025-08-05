@@ -256,8 +256,9 @@ const calculateFinalGrade = (data: EvaluatedMetrics): string => {
   let count = 0;
 
   numericFields.forEach(field => {
-    if (data[field] !== 'NA' && data[field] !== '' && !isNaN(Number(data[field]))) {
-      sum += parseFloat(data[field] as string);
+    const value = data[field];
+    if (value !== 'NA' && typeof value === 'number' && !isNaN(value)) {
+      sum += value;
       count++;
     }
   });
@@ -273,8 +274,9 @@ const calculateFinalGradeWithExtra = (employee: Employee, evaluacionesExtra: Arr
 
   // Calcular promedio de campos base
   baseFields.forEach(field => {
-    if (employee[field] !== 'NA' && employee[field] !== '' && !isNaN(Number(employee[field]))) {
-      sum += parseFloat(employee[field] as string);
+    const value = employee[field];
+    if (value !== 'NA' && typeof value === 'number' && !isNaN(value)) {
+      sum += value;
       count++;
     }
   });
